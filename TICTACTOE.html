@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+   <link rel="stylesheet" href="tictac.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Tic Tac Toe mit 4 Farben</title>
+  </head>
+  <body>
+  <div class="container">
+  <div class="tic-tac" id="tic-tac">
+  <div class="point" onclick="pointClicked(0)"></div>
+  <div class="point" onclick="pointClicked(1)"></div>
+  <div class="point" onclick="pointClicked(2)"></div>
+  <div class="point" onclick="pointClicked(3)"></div>
+  <div class="point" onclick="pointClicked(4)"></div>
+  <div class="point" onclick="pointClicked(5)"></div>
+  <div class="point" onclick="pointClicked(6)"></div>
+  <div class="point" onclick="pointClicked(7)"></div>
+  <div class="point" onclick="pointClicked(8)"></div>
+  </div>
+</div>
+
+
+<div class="scoreboard">
+<span id="redScore">Rot: 0</span>
+<span> : </span>
+<span id="blueScore">Blau: 0</span>
+</div>
+
+<div class="controls">
+<button onclick="startgame()">Start</button>
+<button onclick="restartgame()">Restart</button> 
+</div>
+
+<div id="results"></div>
+
+ <script src="main.js"></script>
+</body>
+</html>

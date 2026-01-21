@@ -1,0 +1,79 @@
+body {
+background-color: white;
+ color: black;
+ background-image: url("https://imgs.search.brave.com/hFcEFQtK7me3nFZJYTl3ZosdnUL2p_56DDbyl5Jp0H0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vdmlrdG9yaWlh/ODgvdmlrdG9yaWlh/ODgyMTA1L3Zpa3Rv/cmlpYTg4MjEwNTAw/OTY0LzE3NzEzOTQ0/Mi10aGUtZ2FtZS1v/Zi10aWMtdGFjLXRv/ZS1pcy1kcmF3bi13/aXRoLWEtcGVuY2ls/LW9uLWEtc2Nob29s/LW5vdGVib29rLWlu/LWEtY2FnZS1hcy1h/LWJhY2tncm91bmQu/anBnP3Zlcj02")}
+
+.container {
+width: 100%;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 20px;}
+
+
+.tic-tac{
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+	  width: 50%;
+	  height: 300px;
+	  position: absolute;
+	  left: 25%;
+    }
+	
+	
+	.point {
+	background-color: white;
+	border: 1px solid black;
+	width: 100%;
+	margin-left: 250px;
+	}
+	
+	.controls {
+		margin-left:725px;
+		margin-top: 30px;
+		 display: flex;
+		 gap: 120px;
+		
+	}
+	
+	.scoreboard {
+		margin-left: 729px;
+		margin-top: 335px;
+		display: flex;
+		gap: 100px;
+		color: black;
+		font-size: 20px;
+		text-decoration: bold;
+	}
+	
+	.controls button {
+      background-color: #1e90ff;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: all 0.2s ease;
+    }
+
+
+    .controls button:hover {
+      background-color: #63b3ff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+    }
+
+
+    .controls button:active {
+      transform: translateY(1px);
+      box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    }
+
+	#results {
+	display: none;}
